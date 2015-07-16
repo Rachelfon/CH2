@@ -84,10 +84,10 @@
                           </block>
                         </value>
                         <statement name="DO0">
-                          <block type="movement_stop" id="22"></block>
+                          <block type="movement_stop" id="21"></block>
                         </statement>
                         <statement name="ELSE">
-                          <block type="movement_forward" id="21"></block>
+                          <block type="movement_forward" id="22"></block>
                         </statement>
                       </block>
                     </next>
