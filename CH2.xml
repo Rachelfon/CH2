@@ -46,10 +46,10 @@
                       </block>
                     </value>
                     <next>
-                      <block type="controls_if" id="7" inline="false">
+                      <block type="controls_if" id="119" inline="false">
                         <value name="IF0">
                           <block type="logic_operation" id="8" inline="true">
-                            <field name="OP">LAND</field>
+                            <field name="OP">LOR</field>
                             <value name="A">
                               <block type="logic_compare" id="9" inline="true">
                                 <field name="OP">GT</field>
@@ -85,6 +85,9 @@
                         <statement name="DO0">
                           <block type="movement_forward" id="15"></block>
                         </statement>
+                        <next>
+                          <block type="movement_stop" id="138"></block>
+                        </next>
                       </block>
                     </next>
                   </block>
