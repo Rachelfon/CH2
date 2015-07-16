@@ -154,6 +154,16 @@
                                                             <field name="NUM">1700</field>
                                                           </block>
                                                         </value>
+                                                        <next>
+                                                          <block type="variables_set" id="86" inline="true">
+                                                            <field name="VAR">B</field>
+                                                            <value name="VALUE">
+                                                              <block type="math_number" id="93">
+                                                                <field name="NUM">2</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </next>
                                                       </block>
                                                     </next>
                                                   </block>
@@ -193,6 +203,16 @@
                                                             <field name="NUM">1700</field>
                                                           </block>
                                                         </value>
+                                                        <next>
+                                                          <block type="variables_set" id="99" inline="true">
+                                                            <field name="VAR">B</field>
+                                                            <value name="VALUE">
+                                                              <block type="math_number" id="106">
+                                                                <field name="NUM">0</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </next>
                                                       </block>
                                                     </next>
                                                   </block>
