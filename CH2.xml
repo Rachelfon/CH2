@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="multimedia_playwav" id="1" x="0" y="0">
-    <field name="WAV">ferrari2.wav</field>
+  <block type="multimedia_playwav" id="1" x="-17" y="7">
+    <field name="WAV">harley.wav</field>
     <next>
       <block type="oled_cleardisplay" id="2">
         <next>
