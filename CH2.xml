@@ -1,30 +1,30 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="107" inline="true" x="-41" y="214">
-    <field name="VAR">A</field>
-    <value name="VALUE">
-      <block type="math_arithmetic" id="36" inline="true">
-        <field name="OP">ADD</field>
-        <value name="A">
-          <block type="sensor_spectrometer" id="45">
-            <field name="LIGHT">BLUE</field>
-          </block>
-        </value>
-        <value name="B">
-          <block type="sensor_spectrometer" id="52">
-            <field name="LIGHT">RED</field>
-          </block>
-        </value>
+  <block type="controls_whileUntil" id="2" inline="false" x="-50" y="212">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="221">
+        <field name="OBJECT">UP</field>
       </block>
     </value>
-    <next>
-      <block type="controls_whileUntil" id="2" inline="false">
-        <field name="MODE">UNTIL</field>
-        <value name="NUMBER">
-          <block type="sensor_button" id="221">
-            <field name="OBJECT">UP</field>
+    <statement name="DO">
+      <block type="variables_set" id="107" inline="true">
+        <field name="VAR">A</field>
+        <value name="VALUE">
+          <block type="math_arithmetic" id="36" inline="true">
+            <field name="OP">ADD</field>
+            <value name="A">
+              <block type="sensor_spectrometer" id="45">
+                <field name="LIGHT">BLUE</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="sensor_spectrometer" id="52">
+                <field name="LIGHT">RED</field>
+              </block>
+            </value>
           </block>
         </value>
-        <statement name="DO">
+        <next>
           <block type="controls_if" id="214" inline="false">
             <value name="IF0">
               <block type="logic_operation" id="139" inline="true">
@@ -65,11 +65,11 @@
               <block type="movement_forward" id="204"></block>
             </statement>
           </block>
-        </statement>
-        <next>
-          <block type="movement_stop" id="8"></block>
         </next>
       </block>
+    </statement>
+    <next>
+      <block type="movement_stop" id="8"></block>
     </next>
   </block>
 </xml>
