@@ -1,59 +1,59 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="2" inline="false" x="-50" y="212">
+  <block type="controls_whileUntil" id="1" inline="false" x="-50" y="212">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
-      <block type="sensor_button" id="221">
+      <block type="sensor_button" id="2">
         <field name="OBJECT">UP</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="variables_set" id="107" inline="true">
+      <block type="variables_set" id="3" inline="true">
         <field name="VAR">A</field>
         <value name="VALUE">
-          <block type="math_arithmetic" id="36" inline="true">
+          <block type="math_arithmetic" id="4" inline="true">
             <field name="OP">ADD</field>
             <value name="A">
-              <block type="sensor_spectrometer" id="45">
+              <block type="sensor_spectrometer" id="5">
                 <field name="LIGHT">BLUE</field>
               </block>
             </value>
             <value name="B">
-              <block type="sensor_spectrometer" id="52">
+              <block type="sensor_spectrometer" id="6">
                 <field name="LIGHT">RED</field>
               </block>
             </value>
           </block>
         </value>
         <next>
-          <block type="controls_if" id="214" inline="false">
+          <block type="controls_if" id="7" inline="false">
             <value name="IF0">
-              <block type="logic_operation" id="139" inline="true">
+              <block type="logic_operation" id="8" inline="true">
                 <field name="OP">LAND</field>
                 <value name="A">
-                  <block type="logic_compare" id="149" inline="true">
+                  <block type="logic_compare" id="9" inline="true">
                     <field name="OP">GT</field>
                     <value name="A">
-                      <block type="variables_get" id="111">
+                      <block type="variables_get" id="10">
                         <field name="VAR">A</field>
                       </block>
                     </value>
                     <value name="B">
-                      <block type="math_number" id="156">
+                      <block type="math_number" id="11">
                         <field name="NUM">170</field>
                       </block>
                     </value>
                   </block>
                 </value>
                 <value name="B">
-                  <block type="logic_compare" id="180" inline="true">
+                  <block type="logic_compare" id="12" inline="true">
                     <field name="OP">LT</field>
                     <value name="A">
-                      <block type="variables_get" id="160">
+                      <block type="variables_get" id="13">
                         <field name="VAR">A</field>
                       </block>
                     </value>
                     <value name="B">
-                      <block type="math_number" id="187">
+                      <block type="math_number" id="14">
                         <field name="NUM">120</field>
                       </block>
                     </value>
@@ -62,14 +62,11 @@
               </block>
             </value>
             <statement name="DO0">
-              <block type="movement_forward" id="204"></block>
+              <block type="movement_forward" id="15"></block>
             </statement>
           </block>
         </next>
       </block>
     </statement>
-    <next>
-      <block type="movement_stop" id="8"></block>
-    </next>
   </block>
 </xml>
