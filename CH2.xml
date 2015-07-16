@@ -53,7 +53,7 @@
                             <field name="OP">LOR</field>
                             <value name="A">
                               <block type="logic_compare" id="15" inline="true">
-                                <field name="OP">GT</field>
+                                <field name="OP">LT</field>
                                 <value name="A">
                                   <block type="variables_get" id="16">
                                     <field name="VAR">A</field>
@@ -68,7 +68,7 @@
                             </value>
                             <value name="B">
                               <block type="logic_compare" id="18" inline="true">
-                                <field name="OP">LT</field>
+                                <field name="OP">GT</field>
                                 <value name="A">
                                   <block type="variables_get" id="19">
                                     <field name="VAR">A</field>
@@ -84,10 +84,10 @@
                           </block>
                         </value>
                         <statement name="DO0">
-                          <block type="movement_forward" id="21"></block>
+                          <block type="movement_stop" id="22"></block>
                         </statement>
                         <statement name="ELSE">
-                          <block type="movement_stop" id="22"></block>
+                          <block type="movement_forward" id="21"></block>
                         </statement>
                       </block>
                     </next>
