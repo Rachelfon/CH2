@@ -228,7 +228,18 @@
                               </block>
                             </statement>
                             <statement name="ELSE">
-                              <block type="movement_forward" id="49"></block>
+                              <block type="movement_setmotors" id="127" inline="true">
+                                <value name="BOTHMOVLEFT">
+                                  <block type="math_number" id="134">
+                                    <field name="NUM">100</field>
+                                  </block>
+                                </value>
+                                <value name="BOTHMOVRIGHT">
+                                  <block type="math_number" id="141">
+                                    <field name="NUM">90</field>
+                                  </block>
+                                </value>
+                              </block>
                             </statement>
                           </block>
                         </next>
