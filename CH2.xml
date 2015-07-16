@@ -47,6 +47,7 @@
                     </value>
                     <next>
                       <block type="controls_if" id="119" inline="false">
+                        <mutation else="1"></mutation>
                         <value name="IF0">
                           <block type="logic_operation" id="8" inline="true">
                             <field name="OP">LOR</field>
@@ -85,6 +86,9 @@
                         <statement name="DO0">
                           <block type="movement_forward" id="15"></block>
                         </statement>
+                        <statement name="ELSE">
+                          <block type="movement_stop" id="138"></block>
+                        </statement>
                       </block>
                     </next>
                   </block>
@@ -93,9 +97,6 @@
             </next>
           </block>
         </statement>
-        <next>
-          <block type="movement_stop" id="138"></block>
-        </next>
       </block>
     </next>
   </block>
