@@ -85,9 +85,6 @@
                         <statement name="DO0">
                           <block type="movement_forward" id="15"></block>
                         </statement>
-                        <next>
-                          <block type="movement_stop" id="138"></block>
-                        </next>
                       </block>
                     </next>
                   </block>
@@ -96,6 +93,9 @@
             </next>
           </block>
         </statement>
+        <next>
+          <block type="movement_stop" id="138"></block>
+        </next>
       </block>
     </next>
   </block>
